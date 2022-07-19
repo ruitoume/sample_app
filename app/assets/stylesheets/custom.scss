@@ -102,6 +102,24 @@ footer {
     }
   }
 }
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
+    }
+    ul {
+      float: none;
+      padding: 0;
+      li {
+        float: none;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 /* miscellaneous */
 
 .debug_dump {
@@ -109,7 +127,6 @@ footer {
   float: left;
   width: 100%;
   margin-top: 45px;
-  @include box_sizing;
 }
 
 /* sidebar */
@@ -176,6 +193,7 @@ input {
     color: $state-danger-text;
   }
 }
+
 .checkbox {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -188,4 +206,22 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
